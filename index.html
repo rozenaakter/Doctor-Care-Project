@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Care Project</title>
+
+    <!-- Remix Icon -->
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- tailwind css -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #07fa7d;
+        --color-secondary: #495057;
+        --color-greenlight:#DCE9e2;
+        --color-greenlight2:#F7F9F9;
+        --color-brand-beige:#FFFAF1;
+        --color-brand-green-hover:#00453A;
+        --font-family-sans: 'DM Sans','sans-serif';
+      }
+    </style>
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="css/style.css"
+
+
+
+</head>
+<body class="bg-greenlight2 overflow-x-hidden">
+    
+    <!-- header section start -->
+
+    <header id="header" class="bg-[#DCE9E2] text-primary fixed top-0 left-0 right-0 w-full z-50 ">
+        <nav class=" container max-w-screen-xl mx-auto flex justify-between items-center py-4">
+            <!-- logo -->
+             <div class="text-xl">
+                <a href="/">Doctor<span class="text-primary">Care</span></a>
+             </div>
+
+             <!-- Menu Items -->
+              <ul class="hidden md:flex space-x-8"  >
+                <li>
+                    <a href="#home" class="hover:text-primary">Inicio</a>
+                </li>
+                <li>
+                    <a href="#services" class="hover:text-primary">Services</a>
+                </li>
+                <li>
+                    <a href="#about" class="hover:text-primary">About</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:text-primary">Depoimentos</a>
+                </li>
+              </ul>
+
+              <!-- call to action button -->
+
+              <div class="hidden md:block">
+                <a id="contact-button" href="#contact" class="md:w-56 text-primary hover:text-white border border-primary px-6 py-2.5 rounded-full hover:bg-primary transition-all duration-200 md:flex items-center justify-center">Agender Consulta</a>
+              </div>
+
+              <!-- Mobile nav button -->
+
+              <div class="md:hidden">
+                <button id="mobile-menu-button" class="navbar-burger flex items-center pt-3">
+                    <img src="./images/menu-icon.svg" alt="menu icon" class="block h-4 w-4 fill-current ">
+                </button>
+              </div>
+        </nav>
+
+        <!-- Todo mobile menu -->
+
+         <div id="mobile-menu" class="navbar-menu relative z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-primary">
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-6 px-6 text-white border-r overflow-y-hidden">
+                  <div class="flex items-center mb-8 ">
+                    <a href="/" class="mr-auto text-2xl leading-none text-white">Doctor <span class="text-white">Care</span></a>
+                    <button id="mobile-menu-close" class="navbar-close">
+                        <img src="./images/close-menu-icon.svg" alt="" class="h-6 w-6 text-white cursor-pointer hover:text-gray-500">
+                    </button>
+                  </div> 
+                  <div>
+                    <ul class="space-y-5">
+                        <li class="mb-2">
+                            <a href="#home" class="hover:text-white">Inicio</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#services" class="hover:text-primary">Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#about" class="hover:text-primary">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contact" class="hover:text-primary">Depoimentos</a>
+                        </li>
+                    </ul>
+                  </div> 
+
+                  <div class="block md:hidden mt-12">
+                    <a id="contact-button" href="#contact" class=" bg-white text-primary hover:text-white border border-primary px-6 py-2.5 rounded-full hover:bg-primary transition-all duration-200 md:flex items-center justify-center">Agender Consulta</a>
+                  </div>
+                </nav>
+            </div>
+
+         </div>
+    </header>
+
+    <!-- header section end -->
+
+    <!-- hero or banner section start -->
+
+    <section id="home" class="py-28 bg-greenlight flex items-center justify-between gap-8">
+        <div class="container max-w-screen-xl mx-auto px-4 flex md:flex-row flex-col items-center justify-between ">
+            <!-- text content -->
+             <div class="md:w-2/3 text-center md:text-left mb-8 md:mb-0 hero-content">
+                <h2 class="text-sm text-primary font-bold mb-4">BOAS-VINDAS A DOCTOR </h2>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Assistencia medica simplificada para todos</h1>
+                <p class="text-lg md:text-xl md:w-4/5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste itaque sequi velit, necessitatibus nam unde.</p>
+                <div class="text-center">
+                    <button class="bg-primary text-white px-6 py-3 mt-4 rounded-full text-lg hover:bg-brand-green-hover flex w-full sm:w-72 items-center justify-center gap-1">
+                        <i class="ri-whatsapp-line"></i>
+                        <a href="#contact">Agenda sua consulta </a>
+                    </button>
+                </div>
+             </div>
+             <div class="w-full md:w-1/3 flex justify-center md:justify-end hero-image">
+                <img src="./images/hero-banner.png" alt="hero image" class="w-full object-cover">
+             </div>
+
+        </div>
+    </section>
+
+    <!-- hero or banner section end -->
+
+    <!-- stats section end -->
+
+    <section class="container bg-brand-beige max-w-screen-xl mx-auto md:h-52 md:-mt-28 mt-0 rounded-lg shadow-lg stats-section  ">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center p-8 pt-12 ">
+            <div class="text-center p-4 rounded-md md:border-r border-b md:border-b-0">
+                <h4 class="text-5xl font-bold mb-1">+3.500</h4>
+                <p class="text-primary">Pacientes atendence</p>
+            </div>
+            <div class="text-center p-4 rounded-md md:border-r border-b md:border-b-0">
+                <h4 class="text-5xl font-bold mb-1">+15</h4>
+                <p class="text-primary">Especialistas disponiveis</p>
+            </div>
+            <div class="text-center p-4 rounded-md">
+                <h4 class="text-5xl font-bold mb-1">+10</h4>
+                <p class="text-primary">Anos no mercado</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- stats section start -->
+
+    <!-- services section start -->
+
+    <section id="services" class="md:py-20 py-12 ">
+        <div class="container max-w-screen-xl mx-auto p-4 text-center"> 
+            <div class="services-content">
+                <p class="text-primary uppercase text-lg mb-4 mt-12">Services</p>
+                <h2 class="text-3xl md:text-5xl md:leading-snug font-bold sm:w-1/2 mx-auto mb-12">Lorem ipsum dolor sit amet?</h2>
+            </div>
+
+            <!-- inject service item card  -->
+             <div id="service-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3
+             gap-8 mb-12 text-left services-content">
+                <!-- cards will come -->
+             </div>
+        </div>
+    </section>
+
+    <!-- services section end -->
+
+    <!-- about section start -->
+ 
+    <section id="about" class=" about-section md:py-20 py-12 bg-brand-beige">
+        <div class="py-12 max-w-screen-xl container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12 ">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 about-section ">
+                <img src="./images/about.png" alt="about image" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-8 about-section">
+                <h3 class="text-primary font-bold uppercase text-sm mb-2.5">Sobre Nos</h3>
+                <h2 class="text-3xl md:text-4xl font-bold text-headline mb-6 md:w-2/3">Lorem ipsum dolor sit amet praesentium.</h2>
+                <p class="text-[#495057] leading-relaxed" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi expedita impedit vero error adipisci amet repellendus, doloribus distinctio reiciendis consectetur ducimus perferendis quam porro laudantium? Quod nam in facilis temporibus odio molestiae placeat deserunt dignissimos, tempora veniam accusantium laborum enim!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- about section end -->
+
+    <!-- contact section start -->
+
+    <section id="contact" class="md:py-20 py-12">
+        <div class="py-12 max-w-screen-xl container mx-auto px-4 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
+            <div class="w-full md:w-1/2 mb-8 md:mb-0 about-section ">
+                <img src="./images/contact.png" alt="about image" class="w-full h-auto rounded-lg shadow-lg">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-8 contact-section">
+                
+                <h2 class="text-3xl md:text-4xl font-bold text-headline mb-6 md:w-2/3">Enter em contact com a generate.</h2>
+                <p class="text-secondary"> <i class="ri-map-pin-line text-primary"></i>
+                    Address:R.amuri Souza,346
+                </p>
+                <p class="text-secondary"><i class="ri-mail-unread-line text-primary"></i></i> Email: contact@doctor.com</p>
+
+                <div class="text-center">
+                    <button class="bg-primary text-white px-6 py-3 mt-4 rounded-full text-lg hover:bg-brand-green-hover flex w-full sm:w-72 items-center justify-center gap-2">
+                        <i class="ri-whatsapp-line"></i>
+                        <a href="#contact">Contact Us </a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section end -->
+
+    <!-- Footer section start -->
+
+    <footer class="bg-primary text-white py-6">
+        <div>
+            <div class="max-w-screen-xl container mx-auto px-4 py-8 flex flex-col sm:flex-row justify-between items-center gap-8 footer-container">
+                <div class="mr-4 text-xl">
+                    <a href="/" class="block text-4xl font-bold text-white mb-4">Doctor Care</a>
+                <p class="text-sm mb-4">&copy;2025 - DoctorCare</p>
+                <p class="text-sm mb-4">Todos os direitos reservados.</p>
+                </div>
+                <div class="flex items-center space-x-4 mt-4 md:mt-0  ">
+                    <a href="#" class="text-white hover:text-gray-500">
+                        <i class="ri-instagram-line text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-500">
+                        <i class="ri-facebook-circle-fill text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-500">
+                        <i class="ri-youtube-fill text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer section end -->
+
+    <!-- scroll reveal -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/animation.js"></script>
+
+    <!-- js script tags -->
+    <script src="./js/app.js"></script>
+    <script src="./js/servicess.js"></script>
+
+
+</body>
+</html>
